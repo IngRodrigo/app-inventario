@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.ajvierci.inventario">
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:name=".utilidades.MyApp"
+        android:allowBackup="true"
+        android:icon="@mipmap/ic_launcher"
+        android:label="@string/app_name"
+        android:roundIcon="@mipmap/ic_launcher_round"
+        android:supportsRtl="true"
+        android:theme="@style/AppTheme"
+        android:usesCleartextTraffic="true">
+        <activity android:name=".ui.OperacionesDevolucionesActivity"></activity>
+        <activity android:name=".ui.EditarDevolucionActivity" />
+        <activity android:name=".ui.DevolucionActivity" />
+        <activity android:name=".ui.FiltrosDevolcionesActivity" />
+        <activity
+            android:name=".ui.CrearDevolucionesActivity"
+            android:parentActivityName=".ui.MenuActivity" />
+        <activity
+            android:name=".ui.DevolucionesActivity"
+            android:parentActivityName=".ui.FiltrosDevolcionesActivity" />
+        <activity
+            android:name=".ui.SincronizarActivity"
+            android:parentActivityName=".ui.MenuActivity" />
+        <activity android:name=".ui.RegistrarActivity" />
+        <activity android:name=".ui.MenuActivity" />
+        <activity android:name=".MainActivity">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+    </application>
+
+</manifest>

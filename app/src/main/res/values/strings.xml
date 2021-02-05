@@ -1,0 +1,35 @@
+<resources>
+    <string name="app_name">Devoluciones</string>
+    <string name="_menu_string_sincronizar">Sincronizar</string>
+    <string name="_menu_string_devoluiones">Devoluciones</string>
+    <string name="_login_string_sesion">Iniciar sesion</string>
+    <string name="_login_string_registrar">Aun no tienes una cuenta? Ingresa aqui!</string>
+    <string name="_registrar_string_login">Si ya tienes una cuenta. Haz click aqui.</string>
+    <string name="_registrar_string_registrar">Registrarse</string>
+    <string name="_sincronizar_string_devoluciones">Devoluciones</string>
+    <string name="_sincronizar_string_clientes">Clientes</string>
+    <string name="_sincronizar_string_articulos">Articulos</string>
+    <string name="_sincronizar_string_devoluciones_chk">Devoluciones</string>
+    <string name="_sincronizar_string_btn_sincronizar">Sincronizar</string>
+    <string name="_crear_devoluciones_string_btn_agregar">Agregar al detalle</string>
+    <string name="_filtros_string_fecha">Por Fecha</string>
+    <string name="_filtros_string_cliente_nombre">Por clientes</string>
+    <string name="_filtros_string_migrado">Enviado</string>
+    <string name="_filtros_string_sin_migrar">Pendiente</string>
+    <string name="_devoluciones_string_sincronizar">sincronizar seleccion</string>
+    <string name="_devoluciones_string_btn_crear">crear nueva</string>
+    <string name="_login_string_hint_usuario">usuario</string>
+    <string name="_login_string_hint_password">Contraseña</string>
+    <string name="_crear_devoluciones_string_btn_gurdar">guarda devolucion</string>
+    <string name="_item_list_string_btn_detalles">Detalles</string>
+    <string name="_devoluciones_string_btn_sincroinziar">SINCRONIZAR</string>
+    <string name="title_activity_c_r_u_d__devoluciones_">CRUD_Devoluciones_Activity</string>
+    <!-- Strings used for fragments for navigation -->
+    <string name="first_fragment_label">First Fragment</string>
+    <string name="second_fragment_label">Second Fragment</string>
+    <string name="next">Next</string>
+    <string name="previous">Previous</string>
+
+    <string name="hello_first_fragment">Hello first fragment</string>
+    <string name="hello_second_fragment">Hello second fragment. Arg: %1$s</string>
+</resources>

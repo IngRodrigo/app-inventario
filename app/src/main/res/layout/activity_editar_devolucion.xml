@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.EditarDevolucionActivity">
+
+ <LinearLayout
+     android:layout_margin="5dp"
+     android:layout_width="wrap_content"
+     android:layout_height="wrap_content"
+     android:orientation="horizontal"
+     >
+     <TextView
+         android:textStyle="bold"
+         android:gravity="center"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="10dp"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="Nº Devolución: "
+         />
+
+     <TextView
+         android:gravity="center"
+         android:layout_marginTop="20dp"
+         android:layout_marginLeft="10dp"
+         android:layout_marginBottom="10dp"
+         android:layout_marginRight="10dp"
+         android:id="@+id/_editar_devolucion_id_devolucion"
+         android:layout_width="match_parent"
+         android:layout_height="wrap_content"
+         android:text="TextView" />
+ </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/_editar_devolucion_titulo_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Cliente: " />
+        <TextView
+            android:layout_margin="10dp"
+            android:id="@+id/_editar_devolucion_empresa"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Empresa" />
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            >
+            <TextView
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:id="@+id/_editar_devolucion_cantidad_detalle_titulo"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="Registros: " />
+            <TextView
+                android:gravity="center"
+                android:layout_margin="10dp"
+                android:id="@+id/_editar_devolucion_cantidad_detalle"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="can" />
+        </LinearLayout>
+    </LinearLayout>
+
+
+    <TextView
+        android:visibility="invisible"
+        android:id="@+id/_editar_devolucion_empresa_id"
+        android:layout_width="0dp"
+        android:layout_height="0dp"
+        android:text="AN8" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/_editar_devolucion_recycler_id"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_margin="5dp"/>
+
+</LinearLayout>

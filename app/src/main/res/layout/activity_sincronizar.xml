@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.SincronizarActivity">
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="48dp"
+        android:text="@string/_sincronizar_string_devoluciones"
+        android:textSize="20sp"
+        app:layout_constraintBottom_toTopOf="@+id/_sincronizar_chkClientes"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/_sincronizar_chkClientes"
+        android:onClick="itemSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="36dp"
+        android:layout_marginLeft="36dp"
+        android:text="@string/_sincronizar_string_clientes"
+        app:layout_constraintBottom_toTopOf="@+id/_sincronizar_chkArticulos"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView" />
+
+    <CheckBox
+        android:id="@+id/_sincronizar_chkArticulos"
+        android:onClick="itemSeleccionado"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:text="@string/_sincronizar_string_articulos"
+        app:layout_constraintBottom_toTopOf="@+id/_sincronizar_chkDevoluciones"
+        app:layout_constraintEnd_toEndOf="@+id/_sincronizar_chkClientes"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/_sincronizar_chkClientes"
+        app:layout_constraintTop_toBottomOf="@+id/_sincronizar_chkClientes" />
+
+    <CheckBox
+        android:id="@+id/_sincronizar_chkDevoluciones"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="16dp"
+        android:onClick="itemSeleccionado"
+        android:text="@string/_sincronizar_string_devoluciones"
+        app:layout_constraintBottom_toTopOf="@+id/_sincronizar_btn_sincronizar"
+        app:layout_constraintEnd_toEndOf="@+id/_sincronizar_chkArticulos"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="@+id/_sincronizar_chkArticulos"
+        app:layout_constraintTop_toBottomOf="@+id/_sincronizar_chkArticulos" />
+
+    <Button
+        android:id="@+id/_sincronizar_btn_sincronizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="24dp"
+        android:text="@string/_sincronizar_string_btn_sincronizar"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_sincronizar_chkDevoluciones" />
+
+    <ProgressBar
+        android:id="@+id/_sincronizar_progreso"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:visibility="invisible"
+        app:layout_constraintBottom_toTopOf="@+id/_sincronizar_btn_sincronizar"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_sincronizar_activity_titulo_cargando" />
+
+    <TextView
+        android:id="@+id/_sincronizar_activity_titulo_cargando"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="18dp"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_sincronizar_chkDevoluciones" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,134 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:padding="20dp"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".ui.RegistrarActivity">
+
+    <EditText
+        android:id="@+id/_registrar_txt_documento"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Documento"
+        android:inputType="number"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/_registrar_txt_nombre"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Nombre"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/_registrar_txt_apellido"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Apellidos"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/_registrar_txt_celular"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Celular"
+        android:inputType="phone"
+        android:textSize="10sp"
+        tools:layout_editor_absoluteY="187dp" />
+
+    <EditText
+        android:id="@+id/_registrar_txt_user"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Usuario"
+        android:inputType="textPersonName"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/_registar_txt_password"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <EditText
+        android:id="@+id/_registar_txt_password"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Contraseña"
+        android:inputType="textPassword"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/_registar_txt_password_confir"
+        app:layout_constraintEnd_toEndOf="@+id/_registrar_txt_user"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/_registrar_txt_user"
+        app:layout_constraintTop_toBottomOf="@+id/_registrar_txt_user" />
+
+    <EditText
+        android:id="@+id/_registar_txt_password_confir"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:ems="10"
+        android:hint="Confirmar contraseña"
+        android:inputType="textPassword"
+        app:layout_constraintBottom_toTopOf="@+id/_registrar_btn_registrar"
+        app:layout_constraintEnd_toEndOf="@+id/_registar_txt_password"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="@+id/_registar_txt_password"
+        app:layout_constraintTop_toBottomOf="@+id/_registar_txt_password"
+        android:textSize="10sp" />
+
+    <Button
+        android:id="@+id/_registrar_btn_registrar"
+        android:layout_width="277dp"
+        android:layout_height="31dp"
+        android:layout_marginTop="10dp"
+        android:text="@string/_registrar_string_registrar"
+        android:textSize="10sp"
+        app:layout_constraintBottom_toTopOf="@+id/_registrar_btn_login"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_registar_txt_password_confir" />
+
+    <TextView
+        android:id="@+id/_registrar_btn_login"
+        android:gravity="center"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="10dp"
+        android:text="@string/_registrar_string_login"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.5"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/_registrar_btn_registrar" />
+
+    <ProgressBar
+        android:visibility="invisible"
+        android:paddingTop="10dp"
+        android:id="@+id/_registrar_btn__progreso"
+        style="?android:attr/progressBarStyle"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content" />
+</LinearLayout>

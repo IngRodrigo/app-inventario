@@ -1,0 +1,144 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:orientation="vertical">
+
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_codigo_DOCO"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="invisible" />
+
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_Migrado"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="invisible" />
+
+
+     <LinearLayout
+         android:layout_width="wrap_content"
+         android:layout_height="wrap_content"
+         android:orientation="horizontal"
+         >
+         <TextView
+             android:id="@+id/_item_lista_detalle_editar_codigo_articulo_titulo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:padding="2dp"
+             android:text="Codigo de barra: " />
+         <EditText
+             android:id="@+id/_item_lista_detalle_editar_codigo_articulo"
+             android:layout_width="wrap_content"
+             android:layout_height="wrap_content"
+             android:layout_margin="10dp"
+             android:inputType="number"
+             android:padding="2dp"
+             android:text="TextView"
+             android:textAlignment="center"
+             android:textSize="14sp" />
+     </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_articulo_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="2dp"
+            android:text="Descripcion: " />
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_articulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="2dp"
+            android:text="TextView" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="horizontal"
+        >
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_cantidad_titulo"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="10dp"
+            android:padding="2dp"
+            android:text="Cantidad:" />
+        <EditText
+            android:id="@+id/_item_lista_detalle_editar_cantidad"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:inputType="number"
+            android:layout_margin="10dp"
+            android:text="TextView"
+            android:textAlignment="center"
+            android:textSize="14sp" />
+    </LinearLayout>
+
+
+        <TextView
+            android:id="@+id/_item_lista_detalle_editar_id_devolucion"
+            android:layout_width="wrap_content"
+            android:layout_height="0dp"
+            android:text=""
+            android:visibility="invisible" />
+
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="horizontal"
+
+    >
+    <Button
+        android:id="@+id/_item_list_detalle_editar_btn_actualizar"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ACTUALIZAR"
+        android:textSize="9.4dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/_item_list_detalle_editar_btn_eliminar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="8dp"
+        android:layout_marginEnd="8dp"
+        android:text="ELIMINAR"
+        android:textSize="9.4dp"
+        android:textStyle="bold" />
+
+    <Button
+        android:id="@+id/_item_list_detalle_editar_btn_agregar"
+        android:layout_width="80dp"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="12dp"
+        android:text="AGREGAR"
+        android:textSize="9.4dp"
+        android:textStyle="bold" />
+</LinearLayout>
+
+        <View
+            android:id="@+id/divider"
+            android:layout_width="477dp"
+            android:layout_height="1dp"
+            android:layout_marginStart="2dp"
+            android:layout_marginTop="16dp"
+            android:layout_marginEnd="1dp"
+            android:background="?android:attr/listDivider" />
+    </LinearLayout>
+

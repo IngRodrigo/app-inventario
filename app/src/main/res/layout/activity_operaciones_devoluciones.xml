@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout
+    android:orientation="vertical"
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="16dp"
+    tools:context=".ui.OperacionesDevolucionesActivity">
+
+   <ScrollView
+       android:layout_width="match_parent"
+       android:layout_height="wrap_content">
+       <LinearLayout
+           android:layout_width="match_parent"
+           android:layout_height="wrap_content"
+           android:orientation="vertical">
+           <TextView
+               android:id="@+id/clientesText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="Clientes" />
+
+           <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/_operaciones_spinner"
+               android:gravity="center"
+               >
+
+           </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+           <TextView
+               android:id="@+id/articulosText"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:layout_margin="10dp"
+               android:text="Articulos" />
+           <com.toptoche.searchablespinnerlibrary.SearchableSpinner
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:id="@+id/_operaciones_spinner_articulos"
+               android:gravity="center">
+
+           </com.toptoche.searchablespinnerlibrary.SearchableSpinner>
+           <EditText
+               android:layout_margin="10dp"
+               android:id="@+id/_operaciones_editText_cantidad"
+               android:inputType="number"
+               android:hint="CANTIDAD"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content">
+
+           </EditText>
+           <LinearLayout
+               android:gravity="center"
+               android:layout_margin="10dp"
+               android:layout_width="match_parent"
+               android:layout_height="wrap_content"
+               android:orientation="horizontal">
+               <Button
+                   android:id="@+id/_operaciones_btn_agregar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="AGREGAR">
+
+               </Button>
+               <Button
+                   android:id="@+id/_operaciones_btn_guardar"
+                   android:layout_width="wrap_content"
+                   android:layout_height="wrap_content"
+                   android:text="GUARDAR"></Button>
+           </LinearLayout>
+       </LinearLayout>
+   </ScrollView>
+    <ListView
+        android:id="@+id/_operaciones_lista_articulos"
+        android:layout_margin="10dp"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+    </ListView>
+
+
+</LinearLayout>
